@@ -1,0 +1,129 @@
+body {
+    margin: 0;  /* para quitar todo el margen de la pagina*/
+    padding: 0;  /* para quitar todo el margen de la pagina*/
+    font-family: "Roboto", system-ui;
+}
+ol,
+ul {
+    list-style: none;   /*quita los puntos que detalles que tiene la lista*/
+
+}
+header a {
+    text-decoration: none;/*quita la linea de abajo que tienen las letras*/
+    color: white;
+}
+header {
+    display: flex;  /*es una propiedad que nos permite ubicar de manera sencilla los elementos en una web. */
+    background-color: red;
+    align-items: center;
+    justify-content: space-between;
+}
+header a i {
+    color: white;
+    font-size: 3em;
+    padding: 0.5em;
+}
+header nav {
+    margin: 1em;
+}
+
+header nav ul {
+    display: flex; /*es una propiedad que nos permite ubicar de manera sencilla los elementos en una web. */
+    gap: 1.1em;  /*esto es para dar espacio a los elementos*/
+}
+header nav ul li a {
+    color: white;
+    font-family: arial;
+}
+
+header nav ul li a:hover{
+    color: white;
+    border-bottom: 1.5px solid white;
+}
+
+.seccion-1{
+    background-color: purple;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.acerca-de{
+    margin:10px;
+    max-width: 50%;
+}
+.acerca-de .section{
+    padding: 2em;
+}
+.acerca-imagen{
+    margin: 10px;
+}
+.acerca-de .section h2,
+p{
+    text-align: right;
+}
+.seccion-2 img {
+    max-height: 400px;
+    width: 100%;
+}
+footer {
+    background-color: yellow;
+    width: 100%;
+}
+footer a {
+    text-decoration: none;
+    color:rgb(31, 130, 160);
+}
+.footer-content{
+    padding: 10px;
+}
+
+.footer-content a:hover{
+    color: black;
+}
+
+.seccion-3 {
+    margin: 30px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.card{
+    max-width: 20em;
+}
+.card .card-content p{
+    text-align: left;
+}
+.card-image img{
+    max-height: 200px;
+    width: 100%;
+    border-radius: 5% ;
+    transition: transform 0.3s ease ;
+}
+.card-image img:hover{
+    transform: scale(1.05);
+}
+#check{
+    display: none;
+}
+.checkbtn{
+    font-size: 25px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    header {
+        background-color: blue;
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        background-color: yellow;
+    }
+}
